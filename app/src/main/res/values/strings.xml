@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HouseControl</string>
+    <string name="kitchen">KITCHEN</string>
+    <string name="bedroom">BEDROOM</string>
+    <string name="livingroom">LIVING ROOM</string>
+    <string name="bathroom">BATHROOM</string>
+    <string name="garage">GARAGE</string>
+    <string name="television">TELEVISION</string>
+    <string name="toggle">TOGGLE</string>
+    <string name="set_artificialsun">SET ARTIFICIAL SUN</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+</resources>
