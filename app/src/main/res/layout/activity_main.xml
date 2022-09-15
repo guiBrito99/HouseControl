@@ -145,14 +145,6 @@
         app:layout_constraintStart_toStartOf="@+id/garage_button"
         app:layout_constraintTop_toBottomOf="@+id/garage_button" />
 
-    <Button
-        android:id="@+id/toggle_button"
-        style="@style/togglebutton_style"
-        android:text="@string/toggle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/livingroom_button" />
 
     <Button
         android:id="@+id/artificialsun_button"
@@ -163,5 +155,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/television_textview"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/allOn_button"
+        style="@style/allbutton_style"
+        android:text="@string/all_on"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/livingroom_button"
+        app:layout_constraintStart_toStartOf="@+id/livingroom_button"
+        app:layout_constraintTop_toBottomOf="@+id/livingroom_button" />
+
+    <Button
+        android:id="@+id/allOff_button"
+        style="@style/allbutton_style"
+        android:text="@string/all_off"
+        app:layout_constraintBaseline_toBaselineOf="@+id/allOn_button"
+        app:layout_constraintEnd_toEndOf="@+id/television_button"
+        app:layout_constraintStart_toStartOf="@+id/television_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
