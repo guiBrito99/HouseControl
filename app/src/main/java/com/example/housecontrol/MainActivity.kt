@@ -2,20 +2,29 @@ package com.example.housecontrol
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
+
+    private val clickListeners = arrayOfNulls<View.OnClickListener>(3)
+    private val buttons = arrayOfNulls<Button>(8)
+    private val status = arrayOfNulls<TextView>(6)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        initializeStatus(setupStatus())
+
+        setupStatus()
+        setupClickListener()
+        setupButtons()
     }
 
-    private fun setupStatus() : Array<TextView?> {
-        val status = arrayOfNulls<TextView>(6)
+    //Assign one index of the TextView array to one TextView in the layout
+    private fun setupStatus(){
 
         status[0] = findViewById(R.id.kitchen_status)
         status[1] = findViewById(R.id.bedroom_status)
@@ -24,16 +33,61 @@ class MainActivity : AppCompatActivity() {
         status[4] = findViewById(R.id.garage_status)
         status[5] = findViewById(R.id.television_status)
 
-        return status
+        initializeStatus(status)
     }
 
+    //Makes all status start with off
     private fun initializeStatus(status : Array<TextView?>){
         for(element in status)
             element?.setText(R.string.off)
     }
 
-    private fun setupButtons() : Array<Button?>{
-        val buttons = arrayOfNulls<Button>(8)
+    //Assign one index of the OnClickListener array to one ClickListener to be used in the buttons
+    private fun setupClickListener(){
+        clickListeners[0] = View.OnClickListener{
+            toggle(it)
+        }
+
+        clickListeners[1] = View.OnClickListener{
+            setUpArtificialSun()
+        }
+
+        clickListeners[2] = View.OnClickListener{
+            toggleAll()
+        }
+    }
+
+    //Opens the artificial sun setup activity
+    private fun setUpArtificialSun(){
+        Toast.makeText(this, "Changing Activity", Toast.LENGTH_SHORT).show()
+    }
+
+    //Change the status based on the button clicked
+    private fun toggle(view : View){
+        when(view.id){
+            R.id.kitchen_button -> reverseString(status[0])
+            R.id.bedroom_button -> reverseString(status[1])
+            R.id.livingroom_button -> reverseString(status[2])
+            R.id.bathroom_button -> reverseString(status[3])
+            R.id.garage_button -> reverseString(status[4])
+            R.id.television_button -> reverseString(status[5])
+        }
+    }
+
+    private fun toggleAll(){
+        for(element in status)
+            reverseString(element)
+    }
+
+    private fun reverseString(status: TextView?){
+        when(status?.text){
+            "ON" -> status.setText(R.string.off)
+            "OFF" -> status.setText(R.string.on)
+        }
+    }
+
+    //Assign one index of the buttons array to one button in the layout
+    private fun setupButtons(){
 
         buttons[0] = findViewById(R.id.kitchen_button)
         buttons[1] = findViewById(R.id.bedroom_button)
@@ -44,20 +98,15 @@ class MainActivity : AppCompatActivity() {
         buttons[6] = findViewById(R.id.artificialsun_button)
         buttons[7] = findViewById(R.id.toggle_button)
 
-        return buttons
+        initializeButtonsWithClickListeners()
     }
 
-    private fun setClickListeners(){
+    private fun initializeButtonsWithClickListeners(){
+        for( element in 0..5)
+            buttons[element]?.setOnClickListener(clickListeners[0])
 
+        buttons[6]?.setOnClickListener(clickListeners[1])
+        buttons[7]?.setOnClickListener(clickListeners[2])
     }
 
-    override fun onResume() {
-        super.onResume()
-
-
-
-
-
-
-    }
 }
