@@ -9,9 +9,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 class artificialSun : AppCompatActivity() {
 
-    private val backButton: Button? = findViewById(R.id.go_back_button)
+    private var backButton: Button? = null
 
     private fun setBackButton(){
+        backButton = findViewById(R.id.go_back_button)
         backButton?.setOnClickListener(){
             startActivity(Intent(this,MainActivity::class.java))
         }
