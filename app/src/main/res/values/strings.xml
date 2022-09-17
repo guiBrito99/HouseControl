@@ -11,6 +11,7 @@
     <string name="artificialsun">ARTIFICIAL SUN</string>
     <string name="sunrise_header">SUNRISE EDITOR</string>
     <string name="add_item">ADD SUNRISE</string>
+    <string name="remove_item">REMOVE SUNRISE</string>
     <string name="on">ON</string>
     <string name="off">OFF</string>
 </resources>
