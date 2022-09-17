@@ -1,5 +1,6 @@
 package com.example.housecontrol
 
+import android.app.ActivityManager
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,7 +15,7 @@ class artificialSun : AppCompatActivity() {
     private fun setBackButton(){
         backButton = findViewById(R.id.go_back_button)
         backButton?.setOnClickListener(){
-            startActivity(Intent(this,MainActivity::class.java))
+            onBackPressed()
         }
     }
 
