@@ -10,18 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ArtificialSun : AppCompatActivity() {
 
-    private var backButton: Button? = null
-
-    private fun setBackButton(){
-        backButton = findViewById(R.id.go_back_button)
-        backButton?.setOnClickListener(){
-            onBackPressed()
-        }
-    }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_artificial_sun)
-        setBackButton()
     }
 }

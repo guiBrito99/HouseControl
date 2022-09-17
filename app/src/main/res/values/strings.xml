@@ -10,7 +10,7 @@
     <string name="all_off">ALL OFF</string>
     <string name="artificialsun">ARTIFICIAL SUN</string>
     <string name="sunrise_header">SUNRISE EDITOR</string>
-    <string name="go_back">BACK</string>
+    <string name="add_item">ADD SUNRISE</string>
     <string name="on">ON</string>
     <string name="off">OFF</string>
 </resources>

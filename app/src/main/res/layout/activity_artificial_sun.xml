@@ -25,15 +25,15 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_margin="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/go_back_button"
+        app:layout_constraintBottom_toTopOf="@+id/add_item_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sunrise_header" />
 
     <Button
-        android:id="@+id/go_back_button"
+        android:id="@+id/add_item_button"
         style="@style/button_style"
-        android:text="@string/go_back"
+        android:text="@string/add_item"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
