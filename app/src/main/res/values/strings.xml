@@ -12,6 +12,22 @@
     <string name="sunrise_header">SUNRISE EDITOR</string>
     <string name="add_item">ADD SUNRISE</string>
     <string name="remove_item">REMOVE SUNRISE</string>
+    <string name="sunrise_info_day">DAY</string>
+    <string name="sunrise_info_hour">HOUR SET</string>
+    <string name="sunrise_info_type">TYPE</string>
+    <string name="sunrise_info_location">LOCATION</string>
+    <string name="sunrise_weekday_monday">MONDAY</string>
+    <string name="sunrise_weekday_tuesday">TUESDAY</string>
+    <string name="sunrise_weekday_wednesday">WEDNESDAY</string>
+    <string name="sunrise_weekday_thursday">THURSDAY</string>
+    <string name="sunrise_weekday_friday">FRIDAY</string>
+    <string name="sunrise_weekday_saturday">SATURDAY</string>
+    <string name="sunrise_weekday_sunday">SUNDAY</string>
+    <string name="sunrise_type_fast">FAST</string>
+    <string name="sunrise_type_normal">NORMAL</string>
+    <string name="sunrise_type_slow">SLOW</string>
     <string name="on">ON</string>
     <string name="off">OFF</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

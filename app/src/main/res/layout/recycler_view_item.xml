@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemList_root"
+    android:layout_width="match_parent"
+    android:layout_height="188dp"
+    android:layout_margin="36dp">
+
+
+    <TextView
+        android:id="@+id/sunrise_info_day"
+        style="@style/sunrise_textview"
+        android:text="@string/sunrise_info_day"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sunrise_info_hour"
+        style="@style/sunrise_textview"
+        android:text="@string/sunrise_info_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_info_day" />
+
+    <TextView
+        android:id="@+id/sunrise_info_type"
+        style="@style/sunrise_textview"
+        android:text="@string/sunrise_info_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_info_hour" />
+
+    <TextView
+        android:id="@+id/sunrise_location"
+        style="@style/sunrise_textview"
+        android:text="@string/sunrise_info_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_info_type" />
+
+
+    <TextView
+        android:id="@+id/sunrise_info_day_value"
+        style="@style/sunrise_textview"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sunrise_info_day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sunrise_info_hour_value"
+        style="@style/sunrise_textview"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sunrise_info_hour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sunrise_info_type_value"
+        style="@style/sunrise_textview"
+        app:layout_constraintBaseline_toBaselineOf="@+id/sunrise_info_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sunrise_info_location_value"
+        style="@style/sunrise_textview"
+        app:layout_constraintBaseline_toBaselineOf="@id/sunrise_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sunrise_list_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sunrise_fragment_list">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sunrise_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/recycler_view_item" />
+
+</LinearLayout>

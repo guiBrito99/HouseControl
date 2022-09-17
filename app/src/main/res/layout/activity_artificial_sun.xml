@@ -20,15 +20,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <FrameLayout
+        android:id="@+id/sunrise_fragment_holder"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_margin="36dp"
         app:layout_constraintBottom_toTopOf="@+id/add_item_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sunrise_header" />
+        app:layout_constraintTop_toBottomOf="@+id/sunrise_header">
+
+    </FrameLayout>
 
     <Button
         android:id="@+id/add_item_button"
@@ -51,5 +52,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

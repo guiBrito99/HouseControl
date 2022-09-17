@@ -14,4 +14,5 @@ class ArtificialSun : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_artificial_sun)
     }
+
 }

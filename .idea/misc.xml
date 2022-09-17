@@ -6,7 +6,10 @@
         <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1945" />
         <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/layout/activity_artificial_sun.xml" value="0.22447916666666667" />
         <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
+        <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/layout/fragment_sunrise_fragment.xml" value="0.22447916666666667" />
         <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/layout/recycler_view_item.xml" value="0.22447916666666667" />
+        <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/layout/sunrise_fragment_editor.xml" value="0.21041666666666667" />
+        <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/layout/sunrise_fragment_list.xml" value="0.22447916666666667" />
         <entry key="..\:/Programas/Android/HouseControl/app/src/main/res/xml/textview_style.xml" value="0.168359375" />
       </map>
     </option>
