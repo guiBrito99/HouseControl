@@ -8,7 +8,7 @@ import android.view.View
 import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 
-class artificialSun : AppCompatActivity() {
+class ArtificialSun : AppCompatActivity() {
 
     private var backButton: Button? = null
 

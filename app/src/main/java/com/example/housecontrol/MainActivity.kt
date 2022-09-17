@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
     //Opens the artificial sun setup activity
     private fun setUpArtificialSun(){
-        startActivity(Intent(this,artificialSun::class.java))
+        startActivity(Intent(this,ArtificialSun::class.java))
     }
 
     //Change the status based on the button clicked
