@@ -1,5 +1,6 @@
 package com.example.housecontrol
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -59,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
     //Opens the artificial sun setup activity
     private fun setUpArtificialSun(){
-        Toast.makeText(this, "Changing Activity", Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this,artificialSun::class.java))
     }
 
     //Change the status based on the button clicked

@@ -9,6 +9,8 @@
     <string name="all_on">ALL ON</string>
     <string name="all_off">ALL OFF</string>
     <string name="set_artificialsun">SET ARTIFICIAL SUN</string>
+    <string name="sunrise_header">SUNRISE EDITOR</string>
+    <string name="go_back">BACK</string>
     <string name="on">ON</string>
     <string name="off">OFF</string>
 </resources>
