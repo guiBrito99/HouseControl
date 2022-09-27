@@ -34,11 +34,11 @@ class MainActivity : AppCompatActivity() {
         status[4] = findViewById(R.id.garage_status)
         status[5] = findViewById(R.id.television_status)
 
-        initializeStatus(status)
+        initializeStatus()
     }
 
     //Makes all status start with off
-    private fun initializeStatus(status : Array<TextView?>){
+    private fun initializeStatus(){
         for(element in status)
             element?.setText(R.string.off)
     }
