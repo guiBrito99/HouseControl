@@ -18,7 +18,8 @@ class ArtificialSun : AppCompatActivity() {
         setContentView(R.layout.activity_artificial_sun)
 
         supportFragmentManager.beginTransaction()
-            .add(R.id.sunrise_fragment_holder,fragments[0]).commit()
+            .replace(R.id.sunrise_fragment_holder,fragments[0]).commit()
+
     }
 
 }

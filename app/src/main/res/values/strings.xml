@@ -29,4 +29,7 @@
     <string name="on">ON</string>
     <string name="off">OFF</string>
     <string name="sunrise_editor_inputText_hint">VALUE</string>
+    <string name="sunrise_editor_done">DONE</string>
+    <string name="sunrise_editor_cancel">CANCEL</string>
+    <string name="null_value">NULL</string>
 </resources>

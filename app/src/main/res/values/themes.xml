@@ -75,7 +75,14 @@
     <style name="sunrise_list_recyclerview">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
-        <item name="android:layout_margin">36dp</item>
+        <item name="android:layout_margin">24dp</item>
+    </style>
+
+    <style name="sunrise_list_recyclerview_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">188dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:background">#FF00FF00</item>
     </style>
 
 </resources>
