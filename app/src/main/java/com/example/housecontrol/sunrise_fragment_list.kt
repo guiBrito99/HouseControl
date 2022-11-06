@@ -62,8 +62,10 @@ class sunrise_fragment_list : Fragment() {
         sunriseListAdapter?.notifyDataSetChanged()
     }
     private fun removeItemToSunriseList(){
-        data.removeLast()
-        sunriseListAdapter?.notifyDataSetChanged()
+        if(data.isNotEmpty()) {
+            data.removeLast()
+            sunriseListAdapter?.notifyDataSetChanged()
+        }
     }
 
 }
